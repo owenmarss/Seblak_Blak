@@ -7,5 +7,5 @@ How to run:
 1. Clone or Download the code.
 2. Open the folder in your IDE.
 3. Go to your IDE terminal and insert this code:
-   # # npm run dev
-   # # php artisan serve
+   # npm run dev
+   # php artisan serve
