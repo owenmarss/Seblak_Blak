@@ -11,6 +11,7 @@ export default {
                 transparent: 'transparent',
                 current: 'currentColor',
                 'white': '#ffffff',
+                'sidebarColor': '#131B2A',
                 'purple': '#3f3cbb',
                 'midnight': '#121063',
                 'metal': '#565584',
@@ -23,3 +24,4 @@ export default {
     },
     plugins: [],
 };
+    
