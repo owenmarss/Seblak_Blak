@@ -14,20 +14,24 @@
 </head>
 
 <body class="bg-backgroundColor flex items-center justify-center h-screen">
-    <div id="login_container" class="bg-white flex flex-col gap-5 items-center justify-center w-2/5 pt-6 pb-20 shadow-md rounded-md">
+    <div id="login_container" class="bg-white flex flex-col gap-8 items-center justify-center w-96 pt-8 pb-20 shadow-lg rounded-lg">
         <div id="login_logo">
-            <h1 class="font-bold text-2xl"> Login </h1>
+            <h1 class="font-bold text-3xl text-sidebarColor"> Login </h1>
         </div>
 
-        <form action="" id="login_form" class="flex flex-col gap-3">
-            <div id="username_form" class="flex flex-col gap-2">
+        <form action="" id="login_form" class="flex flex-col gap-5">
+            <div id="username_form" class="flex flex-col gap-1.5">
                 <label for="username"> Username: </label>
                 <input type="text" name="username" id="username" class="border-solid border border-inputColor/20 shadow pl-1 py-0.5 rounded">
             </div>
 
-            <div id="password_form" class="flex flex-col gap-2">
+            <div id="password_form" class="flex flex-col gap-1.5">
                 <label for="password"> Password: </label>
                 <input type="password" name="password" id="password" class="border-solid border border-inputColor/20 shadow pl-1 py-0.5 rounded">
+            </div>
+
+            <div id="button_form" class="ml-auto mt-6">
+                <button type="submit" class="bg-sidebarColor font-semibold text-lg text-white tracking-wide px-3 py-1 rounded-md hover:underline"> Login </button>
             </div>
         </form>
     </div>
