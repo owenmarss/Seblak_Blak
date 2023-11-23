@@ -14,42 +14,85 @@
 </head>
 
 <body>
-    <div id="sidebar" class="flex flex-col gap-10 bg-sidebarColor h-screen w-80">
-        <div id="logo" class="ml-10 mt-7">
+    <div id="sidebar" class="fixed flex flex-col gap-10 bg-sidebarColor h-screen w-72">
+        <div id="logo_sidebar" class="ml-10 mt-7">
             <h1 class="font-bold text-4xl text-white"> Logo </h1>
         </div>
 
         <div id="sidebar_link" class="flex flex-col gap-2">
-            <a href="" class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded">
-                <x-ri-dashboard-line class="w-8 h-8 ml-3"/>
-                Dashboard 
+            <a href=""
+                class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded">
+                <x-ri-dashboard-line class="w-8 h-8 ml-3" />
+                Dashboard
             </a>
-            <a href="" class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded">
-                <x-ri-truck-line class="w-8 h-8 ml-3"/>
+            <a href=""
+                class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded">
+                <x-ri-truck-line class="w-8 h-8 ml-3" />
                 Inventory
             </a>
-            <a href="" class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded">
-                <x-ri-coins-line class="w-8 h-8 ml-3"/>
+            <a href=""
+                class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded">
+                <x-ri-coins-line class="w-8 h-8 ml-3" />
                 Expenses
             </a>
-            <a href="" class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded">
-                <x-untitledui-activity-heart class="w-8 h-8 ml-3"/>
-                Activity 
+            <a href=""
+                class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded">
+                <x-untitledui-activity-heart class="w-8 h-8 ml-3" />
+                Activity
             </a>
-            <a href="" class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded"> 
-                <x-healthicons-f-money-bag class="w-8 h-8 ml-3"/>
-                Setoran 
+            <a href=""
+                class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded">
+                <x-healthicons-f-money-bag class="w-8 h-8 ml-3" />
+                Setoran
             </a>
-            <a href="" class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded"> 
-                <x-healthicons-f-security-worker class="w-8 h-8 ml-3"/>
-                SOP 
+            <a href=""
+                class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded">
+                <x-healthicons-f-security-worker class="w-8 h-8 ml-3" />
+                SOP
             </a>
-            <a href="" class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded"> 
-                <x-ri-restaurant-line class="w-8 h-8 ml-3"/>
-                Cabang 
+            <a href=""
+                class="text-white no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-white/10 duration-300 active:bg-white/30 rounded">
+                <x-ri-restaurant-line class="w-8 h-8 ml-3" />
+                Cabang
             </a>
         </div>
     </div>
-</body>
 
+    <nav id="navbar" class="fixed w-right left-72 flex items-center justify-between px-8 h-16 border-b shadow-md">
+        <div id="breadcrumbs" class="flex gap-5">
+            <h1 class="font-light hover:text-lightBlue cursor-pointer"> Home </h1>
+            <h1 class="font-light"> / </h1>
+            <h1 class="font-light hover:text-lightBlue cursor-pointer"> Sub Page 1 </h1>
+            <h1 class="font-light"> / </h1>
+            <h1 class="font-light hover:text-lightBlue cursor-pointer"> Sub Page 2 </h1>
+        </div>
+
+        <div id="profile" class="flex gap-1 cursor-pointer">
+            <x-far-user-circle class="w-8 text-sidebarColor" />
+            <x-ri-arrow-down-s-line class="w-6 text-sidebarColor" />
+        </div>
+    </nav>
+
+    <main class="relative left-72 w-right top-16">
+        <h1 class="font-bold"> Ini Main nya</h1>
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus natus error maxime
+            atque? Quidem repudiandae, voluptatem optio earum officia assumenda libero in architecto, eaque natus
+            mollitia ullam recusandae fugit.
+        </p>
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus natus error maxime
+            atque? Quidem repudiandae, voluptatem optio earum officia assumenda libero in architecto, eaque natus
+            mollitia ullam recusandae fugit.
+        </p>
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus natus error maxime
+            atque? Quidem repudiandae, voluptatem optio earum officia assumenda libero in architecto, eaque natus
+            mollitia ullam recusandae fugit.
+        </p>
+    </main>
+</body>
 </html>
