@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -60,7 +61,7 @@
 
     <nav id="navbar" class="fixed w-right left-72 flex items-center justify-between px-8 h-16 border-b shadow-md">
         <div id="breadcrumbs" class="flex gap-5">
-            <h1 class="font-light hover:text-lightBlue cursor-pointer"> Home </h1>
+            <h1 class="font-light hover:text-lightBlue cursor-pointer"> Dashboard </h1>
             <h1 class="font-light"> / </h1>
             <h1 class="font-light hover:text-lightBlue cursor-pointer"> Sub Page 1 </h1>
             <h1 class="font-light"> / </h1>
