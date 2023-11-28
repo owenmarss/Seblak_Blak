@@ -19,10 +19,11 @@
             <h1 class="font-bold text-3xl text-sidebarColor"> Login </h1>
         </div>
 
-        <form action="" id="login_form" class="flex flex-col gap-5">
+        <form action="/login/auth" id="login_form" class="flex flex-col gap-5" method="POST">
+            @csrf
             <div id="username_form" class="flex flex-col gap-1.5">
-                <label for="username"> Username: </label>
-                <input type="text" name="username" id="username" class="border-solid border border-inputColor/20 shadow pl-1 py-0.5 rounded">
+                <label for="email"> Email: </label>
+                <input type="email" name="email" id="email" class="border-solid border border-inputColor/20 shadow pl-1 py-0.5 rounded">
             </div>
 
             <div id="password_form" class="flex flex-col gap-1.5">

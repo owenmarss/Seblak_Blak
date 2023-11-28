@@ -10,10 +10,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> 
 </head>
 
 <body>
+    <form action="/logout" method="post">
+        @csrf
+        <button type="submit" class="w-100 boxShadow px-4 py-2 rounded text-light bg-empat">
+            Log Out
+        </button>
+    </form>
+    
     <div id="sidebar" class="fixed flex flex-col gap-10 bg-sidebarColor h-screen w-72">
         <div id="logo_sidebar" class="ml-10 mt-7">
             <h1 class="font-bold text-4xl text-white"> Logo </h1>
