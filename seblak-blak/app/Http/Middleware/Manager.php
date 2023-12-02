@@ -16,8 +16,9 @@ class Manager
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::user()->role == 'manager') {
+        if (Auth::check() && Auth::user()->role == 'manager') {
             return $next($request);
-        }
+        } 
+        return redirect('/login');
     }
 }

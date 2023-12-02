@@ -16,8 +16,9 @@ class Worker
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::user()->role == 'worker') {
+        if (Auth::check() && Auth::user()->role == 'worker') {
             return $next($request);
         }
+        return redirect('/login');
     }
 }

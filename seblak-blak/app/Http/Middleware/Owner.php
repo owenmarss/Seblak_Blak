@@ -16,8 +16,9 @@ class Owner
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::user()->role == 'owner') {
+        if (Auth::check() && Auth::user()->role == 'owner') {
             return $next($request);
-        }
+        } 
+        return redirect('/login');
     }
 }
