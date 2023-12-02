@@ -20,7 +20,7 @@
             Log Out
         </button>
     </form>
-    
+
     <div id="sidebar" class="fixed flex flex-col gap-10 bg-sidebarColor h-screen w-72">
         <div id="logo_sidebar" class="ml-10 mt-7">
             <h1 class="font-bold text-4xl text-white"> Logo </h1>
