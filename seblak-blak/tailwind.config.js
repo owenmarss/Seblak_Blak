@@ -27,6 +27,7 @@ export default {
                 'right': 'calc(100% - 16rem)'
             },
             screens: {
+<<<<<<< Updated upstream
                 '4xs': '300px',
                 // => @media (min-width: 300px) { ... }
 
@@ -36,6 +37,14 @@ export default {
                 'xs': '475px',
                 // => @media (min-width: 475px) { ... }
                 
+=======
+                '2xs' : '400px',
+                // => @media (min-width: 400px) { ... }
+
+                'xs' : '475px',
+                // => @media (min-width: 475px) { ... }
+
+>>>>>>> Stashed changes
                 'sm': '640px',
                 // => @media (min-width: 640px) { ... }
           
@@ -50,7 +59,11 @@ export default {
           
                 '2xl': '1536px',
                 // => @media (min-width: 1536px) { ... }
+<<<<<<< Updated upstream
             }
+=======
+              }
+>>>>>>> Stashed changes
         },
     },
     plugins: [],
