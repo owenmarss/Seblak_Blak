@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet"> 
+
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         </button>
     </form>
 
-    <div id="sidebar" class="fixed flex flex-col gap-10 bg-sidebarColor h-screen w-72">
+    <div id="sidebar" class="fixed md:flex flex-col 4xs:hidden gap-10 bg-sidebarColor h-screen w-64">
         <div id="logo_sidebar" class="ml-10 mt-7">
             <h1 class="font-bold text-4xl text-white"> Logo </h1>
         </div>
@@ -65,27 +66,27 @@
         </div>
     </div>
 
-    <nav id="navbar" class="fixed w-right left-72 flex items-center justify-between px-8 h-16 border-b shadow-md">
-        <div id="breadcrumbs" class="flex gap-5">
-            <h1 class="font-light hover:text-lightBlue cursor-pointer"> Home </h1>
+    <nav id="navbar" class="fixed md:w-right md:left-64 2xs:w-full flex items-center justify-between px-8 h-16 border-b shadow-md">
+        <div id="breadcrumbs" class="flex xs:gap-3 md:gap-5">
+            <h1 class="font-light hover:text-lightBlue hover:underline cursor-pointer"> Home </h1>
             <h1 class="font-light"> / </h1>
-            <h1 class="font-light hover:text-lightBlue cursor-pointer"> Sub Page 1 </h1>
+            <h1 class="font-light hover:text-lightBlue hover:underline cursor-pointer"> Sub Page 1 </h1>
             <h1 class="font-light"> / </h1>
-            <h1 class="font-light hover:text-lightBlue cursor-pointer"> Sub Page 2 </h1>
+            <h1 class="font-light hover:text-lightBlue hover:underline cursor-pointer"> Sub Page 2 </h1>
         </div>
 
         <div id="profile" class="flex gap-1 cursor-pointer">
             <x-far-user-circle class="w-8 text-sidebarColor" />
-            <x-ri-arrow-down-s-line class="w-6 text-sidebarColor" />
+            <x-ri-arrow-down-s-line id="arrowDown" class="w-6 text-sidebarColor transition duration-500" />
         </div>
     </nav>
 
-    <main class="relative left-72 w-right top-16">
+    <main class="md:ml-64 md:w-right 2xs:w-full mt-16">
         <h1 class="font-bold"> Ini Main nya</h1>
 
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus natus error maxime
-            atque? Quidem repudiandae, voluptatem optio earum officia assumenda libero in architecto, eaque natus
+            atque? Quidem repufsa oluptatem optio earum officia assumenda libero in architecto, eaque natus
             mollitia ullam recusandae fugit.
         </p>
 
@@ -102,4 +103,5 @@
         </p>
     </main>
 </body>
+{{-- <script src="{{ asset('../js/profile.js') }}"></script>  --}}
 </html>
