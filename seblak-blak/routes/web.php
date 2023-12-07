@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CabangController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +18,8 @@ use App\Http\Controllers\DashboardController;
 */
 Route::middleware(['Admin'])->group(function () {
     Route::get('/', [DashboardController::class, 'goToDashboard']);
-    
+    Route::get('/sop-directory', [SopController::class, 'goToSopDirectory']);
+    Route::get('/cabang', [CabangController::class, 'goToCabang']);
     
     Route::post('/logout', [AuthController::class, 'logOut']);
 });
