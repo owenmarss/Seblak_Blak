@@ -1,4 +1,4 @@
-{{-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,14 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet"> 
+    
+    <title> Seblak-Blak | {{$title}} </title>
 </head>
 <body>
-    <form action="/logout" method="post">
+    {{-- <form action="/logout" method="post">
         @csrf
         <button type="submit" class="w-100 boxShadow px-4 py-2 rounded text-light bg-empat">
             Log Out
         </button>
-    </form>
+    </form> --}}
 
     <div id="sidebar" class="fixed md:flex flex-col 4xs:hidden gap-10 bg-sidebarColor h-screen w-64">
         <div id="logo_sidebar" class="ml-10 mt-7">
@@ -63,7 +65,7 @@
         </div>
     </div>
 
-    <nav id="navbar" class="fixed md:w-right md:left-64 2xs:w-full flex items-center justify-between px-8 h-16 border-b shadow-md">
+    <nav id="navbar" class="fixed md:w-right md:left-64 2xs:w-full flex items-center justify-between px-8 h-16 border-b shadow-md bg-white">
         <div id="breadcrumbs" class="flex xs:gap-3 md:gap-5">
             <h1 class="font-light hover:text-lightBlue hover:underline cursor-pointer"> Home </h1>
             <h1 class="font-light"> / </h1>
@@ -78,26 +80,27 @@
         </div>
     </nav>
 
-    <main class="md:ml-64 md:w-right 2xs:w-full pt-16">
-        <h1 class="font-bold"> Ini Main nya</h1>
-
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus natus error maxime
-            atque? Quidem repufsa oluptatem optio earum officia assumenda libero in architecto, eaque natus
-            mollitia ullam recusandae fugit.
-        </p>
-
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus natus error maxime
-            atque? Quidem repudiandae, voluptatem optio earum officia assumenda libero in architecto, eaque natus
-            mollitia ullam recusandae fugit.
-        </p>
-
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus natus error maxime
-            atque? Quidem repudiandae, voluptatem optio earum officia assumenda libero in architecto, eaque natus
-            mollitia ullam recusandae fugit.
-        </p>
-    </main>
+    @yield('main')
 </body>
-</html> --}}
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const profileDiv = document.querySelector("#profile")
+        
+        profileDiv.addEventListener("mouseenter", function() {
+            var arrowIcon = document.querySelector("#arrowDown")
+
+            if(arrowIcon) {
+                arrowIcon.classList.add("rotate-180")
+            }
+        })
+        
+        profileDiv.addEventListener("mouseleave", function() {
+            var arrowIcon = document.querySelector("#arrowDown")
+            
+            if(arrowIcon) {
+                arrowIcon.classList.remove("rotate-180")
+            }
+        })
+    })
+</script>
+</html>

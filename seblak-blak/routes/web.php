@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,11 +15,10 @@ use App\Http\Controllers\AuthController;
 |
 */
 Route::middleware(['Admin'])->group(function () {
+    Route::get('/', [DashboardController::class, 'goToDashboard']);
+    
+    
     Route::post('/logout', [AuthController::class, 'logOut']);
-
-    Route::get('/', function () {
-        return view('welcome');
-    });
 });
 
 // Route::get('/login', function () {
