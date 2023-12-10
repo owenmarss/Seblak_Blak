@@ -20,7 +20,7 @@ Route::middleware(['Admin'])->group(function () {
     Route::get('/', [DashboardController::class, 'goToDashboard']);
     Route::get('/sop-directory', [SopController::class, 'goToSopDirectory']);
     Route::get('/cabang', [CabangController::class, 'goToCabang']);
-    
+    Route::delete('/cabang-delete', [CabangController::class, 'deleteCabang']);
     Route::post('/logout', [AuthController::class, 'logOut']);
 });
 

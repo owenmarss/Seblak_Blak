@@ -32,7 +32,7 @@
             </div>
 
             <div id="button_form" class="ml-auto mt-6">
-                <button type="submit" class="bg-sidebarColor font-semibold text-lg text-white tracking-wide px-3 py-1 rounded-md hover:underline"> Login </button>
+                <button type="submit" class="bg-secondary font-semibold text-lg text-white tracking-wide px-3 py-1 rounded-md hover:underline"> Login </button>
             </div>
         </form>
     </div>
