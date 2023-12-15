@@ -10,9 +10,13 @@
             <div id="sop_directory_list">
                 <ol class="list-disc pl-10">
                     <li>
-                        <a href="" class="text-lightBlue hover:underline">
-                            Looping menggunakan database
-                        </a>
+                        {{-- <form action="">
+                            <input type="hidden" name="">
+                            <p class="text-lightBlue hover:underline">
+                                Looping menggunakan database
+                            </p>
+                        </form> --}}
+                        <a href="/sop-directory/sop" class="text-lightBlue hover:underline"> Looping menggunakan database </a>
                     </li>
                 </ol>
             </div>

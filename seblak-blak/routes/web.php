@@ -18,10 +18,20 @@ use App\Http\Controllers\SopController;
 */
 Route::middleware(['Admin'])->group(function () {
     Route::get('/', [DashboardController::class, 'goToDashboard']);
+
+    // SOP
     Route::get('/sop-directory', [SopController::class, 'goToSopDirectory']);
+    Route::get('/sop-directory/sop', [SopController::class, 'goToSopPagePerId']);
+
+    // Cabang
     Route::get('/cabang', [CabangController::class, 'goToCabang']);
+    Route::get('/cabang/add-cabang', [CabangController::class, 'goToAddCabang']);
+    Route::post('/cabang/add-cabang/add', [CabangController::class, 'addCabang']);
     Route::delete('/cabang-delete', [CabangController::class, 'deleteCabang']);
+
+    // Logout
     Route::post('/logout', [AuthController::class, 'logOut']);
+
 });
 
 // Route::get('/login', function () {

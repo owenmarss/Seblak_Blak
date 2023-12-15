@@ -38,7 +38,7 @@
             <a href=""
                 class="text-secondary no-underline hover:underline mx-7 py-2 flex gap-5 items-center bg-transparent hover:bg-backgroundColor duration-300 active:bg-white/30 rounded">
                 <x-healthicons-f-money-bag class="w-8 h-8 ml-3" />
-                Setoran
+                Pendapatan
             </a>
 
             <a href=""
@@ -74,13 +74,23 @@
         </div>
     </div>
 
-    <nav id="navbar" class="fixed md:w-right md:left-64 2xs:w-full flex items-center justify-between px-8 h-16 border-b shadow-md bg-white">
-        <div id="breadcrumbs" class="flex xs:gap-3 md:gap-5">
+    <nav id="navbar" class="fixed md:w-right md:left-64 4xs:w-full flex items-center justify-between px-8 h-16 border-b shadow-md bg-white">
+        {{-- <div id="breadcrumbs" class="flex xs:gap-3 md:gap-5">
             <h1 class="font-light hover:text-lightBlue cursor-pointer"> Home </h1>
             <h1 class="font-light"> / </h1>
             <h1 class="font-light hover:text-lightBlue cursor-pointer"> Sub Page 1 </h1>
             <h1 class="font-light"> / </h1>
             <h1 class="font-light hover:text-lightBlue cursor-pointer"> Sub Page 2 </h1>
+        </div> --}}
+
+        <div id="hamburger_icon">
+            <button class="">
+                <x-sui-menu-hamburger class="w-11 pt-1.5" />
+            </button>
+        </div>
+
+        <div id="navbar_logo" class="xs:block md:hidden">
+            <img src="{{url('img/Seblak-blak Typo Transparent.png')}}" class="w-24" alt="">
         </div>
 
         <div id="profile" class="flex gap-1 cursor-pointer group">
@@ -91,4 +101,5 @@
 
     @yield('main')
 </body>
+<script src="/js/profile.js"> </script>
 </html>

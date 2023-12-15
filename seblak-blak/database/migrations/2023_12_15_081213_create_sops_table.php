@@ -11,14 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('cabangs', function (Blueprint $table) {
+        Schema::create('sops', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->string('lokasi');
-            $table->string('owner');
-            $table->string('manager');
-            $table->time('buka')->default("00:00:00");
-            $table->time('tutup')->default("00:00:00");
             $table->timestamps();
         });
     }
@@ -28,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('cabangs');
+        Schema::dropIfExists('sops');
     }
 };

@@ -60,7 +60,7 @@
             </table>
 
             <div id="add_cabang" class="flex justify-end pt-12">
-                <a href="">
+                <a href="/cabang/add-cabang">
                     <button class="flex items-center gap-2 text-lg duration-300 bg-secondary text-white px-3 py-1 rounded-lg hover:bg-white hover:text-secondary hover:shadow-xl hover:underline">
                         <x-ri-add-circle-line class="w-7 h-7"/> 
                         Tambahkan 
